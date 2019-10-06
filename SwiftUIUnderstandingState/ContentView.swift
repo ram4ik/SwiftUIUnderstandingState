@@ -15,6 +15,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(pokemon)
+                .frame(width: UIScreen.main.bounds.width, height: 50 )
+                .background(Color.blue)
+                .foregroundColor(Color.white)
+                .padding(10)
+            
             Button(action: switchPokemon,
                    label: {Text("Switch")
             })
