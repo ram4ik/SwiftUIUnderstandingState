@@ -15,8 +15,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(pokemon)
-            Button(action: {
-                self.switchPokemon() },
+            Button(action: switchPokemon,
                    label: {Text("Switch")
             })
         }
